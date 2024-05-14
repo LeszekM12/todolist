@@ -1,9 +1,14 @@
 .form__field {
-    border: 1px solid rgb(68, 68, 68);
+    border: 1px solid;
     padding: 10px;
     width: 100%;
     max-width: 350px;
-    border-radius: 10px;
-    background-color: hsl(0, 0%, 27%);
-    color: aliceblue;
+    color: rgb(130, 137, 143);
+}
+
+.form__button {
+    padding: 10px;
+    width: 100%;
+    max-width: 150px;
+    color: rgb(135, 145, 153);
 }
