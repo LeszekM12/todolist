@@ -1,0 +1,9 @@
+.section {
+    margin: 20px;
+    padding: 40px;
+    flex-basis: 400px;
+}
+
+.section__body {
+    padding: 20px;
+}
