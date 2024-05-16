@@ -2,7 +2,7 @@
 
 ## **Description:**
 
-My project is based on the [YouCode](https://youcode.pl/frontend-developer/)
+This is an application of the tasks list that is simple to work with. Type a task or exercise and press the button to write down on the list. Check off or remove tasks that you have completed! My project is based on the [YouCode](https://youcode.pl/frontend-developer/)
 
 ## **Technologies:**
 
