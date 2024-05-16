@@ -1,7 +1,7 @@
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 @media(max-width: 767px) {
@@ -25,11 +25,17 @@
 .form__button {
     padding: 10px;
     width: 150px;
-    color: rgb(135, 145, 153);
+    color: white;
+    background-color: hsl(180, 100%, 25%);
 }
 
 @media(max-width: 767px) {
     .form__button {
         width: 100%;
     }
+}
+
+.form__button:hover {
+    transform: scale(1.1);
+    background-color: hsl(180, 100%, 35%);
 }
