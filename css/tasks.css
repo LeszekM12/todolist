@@ -1,3 +1,26 @@
+.tasks {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.tasks__button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: grid;
+    align-items: center;
+}
+
+.tasks__button--toggleDone{
+    background-color: green;
+}
+
+.tasks__button--remove {
+    background-color: red;
+}
+
 .tasks__content--done {
     text-decoration: line-through;
 }

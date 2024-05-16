@@ -1,7 +1,17 @@
 .section {
     margin: 20px;
-    padding: 20px;
+    padding: 5px;
     flex-basis: 400px;
+}
+
+.section__header{
+    border-bottom: 1px solid #e6e6e6;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }
 
 .section__body {

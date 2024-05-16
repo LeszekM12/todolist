@@ -2,13 +2,15 @@
     const tasks = [
       {
         content: "Stworzyć liste zadań",
-        done: false,
+        done: true,
       },
       {
         content: "Ukończyć tydzień",
         done: true,
       },
     ];
+
+    const hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
       tasks.push({
@@ -18,13 +20,13 @@
       render();
     };
 
-    const removeTask = (index) => {
-      tasks.splice(index, 1);
+    const removeTask = (taskIndex) => {
+      tasks.splice(taskIndex, 1);
       render();
     };
 
-    const toggleTaskDone = (index) => {
-      tasks[index].done = !tasks[idnex].done;
+    const toggleTaskDone = (taskIndex) => {
+      tasks[taskIndex].done = !tasks[taskIndex].done;
       render();
     };
 
@@ -51,14 +53,18 @@
   
       for (const task of tasks) {
         htmlString += `
-              <li 
-                class="tasks__content"${task.done ? "tasks__content--done" : ""}  
-              >
-                  <button class="js-done">ukończone</button>
-                  <button class="js-remove">usuń</button>
-                  ${task.content}
-              </li>
-            `;
+        <li class=
+        "tasks__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-task
+        ">
+            <button class="tasks__button tasks__button--toggleDone js-done">
+                ${task.done ? "-" : "🗸"}
+            </button>
+            <span class="tasks__content ${task.done ? "tasks__content--done" : ""}">
+                ${task.content}
+            </span>
+            <button class="tasks__button tasks__button--remove js-remove">🗑️</button>
+        </li>
+    `;
       }
   
       document.querySelector(".js-tasks").innerHTML = htmlString;

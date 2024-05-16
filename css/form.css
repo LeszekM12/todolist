@@ -1,14 +1,35 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+}
+
+@media(max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
 .form__input {
     border: 1px solid;
     padding: 10px;
-    width: 100%;
-    max-width: 350px;
     color: rgb(130, 137, 143);
+}
+
+@media(max-width: 767px) {
+    .form__input {
+        width: 100%;
+    }
 }
 
 .form__button {
     padding: 10px;
-    width: 100%;
-    max-width: 150px;
+    width: 150px;
     color: rgb(135, 145, 153);
+}
+
+@media(max-width: 767px) {
+    .form__button {
+        width: 100%;
+    }
 }
