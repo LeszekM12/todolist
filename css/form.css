@@ -27,7 +27,7 @@
     padding: 10px;
     width: 150px;
     color: white;
-    background-color: hsl(180, 100%, 25%);
+    background-color: hsl(180, 100%, 20%);
 }
 
 @media(max-width: 767px) {
@@ -38,8 +38,8 @@
 
 .form__button:hover {
     transform: scale(1.1);
-    background-color: hsl(180, 100%, 35%);
+    background-color: hsl(180, 100%, 25%);
 }
 .form__button:active {
-    background: hsl(180, 100%, 45%);
+    background: hsl(180, 100%, 35%);
 }
