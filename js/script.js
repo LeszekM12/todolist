@@ -2,7 +2,7 @@
     const tasks = [
       {
         content: "Stworzyć liste zadań",
-        done: true,
+        done: false,
       },
       {
         content: "Ukończyć tydzień",
