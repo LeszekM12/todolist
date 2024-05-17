@@ -16,5 +16,4 @@ This is an application of the tasks list that is simple to work with. Type a tas
 + Java Script ECMAScript 6
 
 ## **Try [app of todolist](https://leszekm12.github.io/todolist/)**
-![todolist](https://github.com/LeszekM12/todolist/assets/130221590/dacfb36e-5c3b-453b-911f-ed4c820af3ac)
-
+![todolist](https://github.com/LeszekM12/todolist/assets/130221590/a50a77f9-54f5-476b-b615-557769541f2f)
