@@ -82,7 +82,6 @@
       
     const tasksElement = document.querySelector(".js-tasks");
     tasksElement.innerHTML = tasks.map(taskToHTML).join("");
-    bindEvents();
   };
 
   const renderButtons = () => {
@@ -121,7 +120,7 @@
     renderTasks();
     renderButtons();
     bindButtonsEvents();
-
+    bindEvents();
   };
 
   const onFormSubmit = (event) => {
