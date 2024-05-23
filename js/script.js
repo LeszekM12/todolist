@@ -104,6 +104,19 @@
       `;
   };
 
+  const bindButtonsEvents = () => {
+    const toggleHideTaskDoneButton = document.querySelector(".js-toggleHideTaskDone");
+    const markAllDoneButtons = document.querySelector(".js-markAllDone");
+
+    if(toggleHideTaskDoneButton) {
+      toggleHideTaskDoneButton.addEventListener("click", toggleHideTaskDone);
+    }
+
+    if(markAllDoneButtons) {
+      markAllDoneButtons.addEventListener("click", markAllTasksDone);
+    }
+  };
+
   const render = () => {
     renderTasks();
     renderButtons();
