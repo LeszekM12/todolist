@@ -24,14 +24,39 @@
     display: grid;
     align-items: center;
     border-bottom: 1px solid #ddd;
+    transition: color 0.3s;
+}
+
+.task__button {
+    border: none;
+    background-color:white;
+    color: hsl(180, 100%, 25%);
+    margin: 0 0 0 20px;
+    transition: color 0.3s;
+}
+
+.task__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.task__button:disabled {
+    color: white;
 }
 
 .tasks__button--toggleDone{
     background-color: green;
 }
 
+.tasks__button--toggleDone:hover {
+    background-color: hsl(120, 100%, 40%);
+}
+
 .tasks__button--remove {
     background-color: red;
+}
+
+.tasks__button--remove:hover {
+    background-color: hsl(0, 100%, 70%);
 }
 
 .tasks__content--done {
