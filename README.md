@@ -8,11 +8,11 @@ This is an application of the tasks list that is simple to work with. Type a tas
 
 + HTML5
 + CSS3
-  + *BEM convention*
-  + *Flex-Box*
-  + *Grid*
-  + *Media Queries Level 4*
-  + *Normalize.css*
+  + `BEM convention`
+  + `Flex-Box`
+  + `Grid`
+  + `Media Queries Level 4`
+  + `Normalize.css`
 + Java Script ECMAScript 6
 
 ## **Try [app of todolist](https://leszekm12.github.io/todolist/)**
